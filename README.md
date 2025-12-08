@@ -1,7 +1,9 @@
 # Sysadmin Starter Pack
 
-A collection of basic scripts and configuration files to help system administrators get started quickly with system setup, backups, and logging.
+This project contains a Bash script that automates basic system administration tasks.  
+The script creates directories, generates files, sets correct permissions, and displays the directory structure in a clean and professional way.
 
+It was built as a practical DevOps/SysAdmin assignment.
 ## Directory Structure
 
 ```
