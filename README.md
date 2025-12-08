@@ -1,57 +1,52 @@
 # Sysadmin Starter Pack
 
-This project contains a Bash script that automates basic system administration tasks.  
-The script creates directories, generates files, sets correct permissions, and displays the directory structure in a clean and professional way.
+A collection of basic scripts and configuration files to help system administrators get started quickly with system setup, backups, and logging.
 
-It was built as a practical DevOps/SysAdmin assignment.
-
-## Features
-
-- Automatically create common directories and files
-- Set appropriate file and directory permissions
-- Output the directory structure in a readable "tree" format
-
-## Example Output
-
-After running the script, you can expect a directory structure similar to:
+## Directory Structure
 
 ```
-project-root/
-├── bin/
-│   └── script.sh
-├── logs/
-│   └── sysadmin.log
-├── tmp/
-└── README.md
+.
+├── configs
+│   └── app.conf
+├── logs
+│   └── system.log
+├── scripts
+│   └── backup.sh
+├── setup_environment.sh
 ```
 
-## How to Run
+### Contents
 
-1. Clone the repository:
-    ```bash
+- **configs/app.conf**  
+  Main application configuration file.
+
+- **logs/system.log**  
+  System log file for capturing script outputs and diagnostics.
+
+- **scripts/backup.sh**  
+  Script to perform regular system or application backups.
+
+- **setup_environment.sh**  
+  Shell script to set up the initial environment, install dependencies, and configure the system.
+
+## Usage
+
+1. Clone this repository to your local machine:
+    ```sh
     git clone https://github.com/nabbi007/sysadmin-starter-pack.git
     cd sysadmin-starter-pack
     ```
 
-2. Make the script executable:
-    ```bash
-    chmod +x bin/script.sh
+2. To set up your environment, run:
+    ```sh
+    ./setup_environment.sh
     ```
 
-3. Run the script:
-    ```bash
-    ./bin/script.sh
-    ```
-
-4. View the output tree:
-    ```bash
-    tree .
+3. To run backups, execute:
+    ```sh
+    ./scripts/backup.sh
     ```
 
 ## License
 
 This project is licensed under the MIT License.
-
----
-
-*Made by nabbi007 as a DevOps/SysAdmin practical assignment.*
