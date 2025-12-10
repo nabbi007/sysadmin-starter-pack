@@ -49,6 +49,22 @@ It was built as a practical DevOps/SysAdmin assignment.
     ./scripts/backup.sh
     ```
 
+## Expected Output Example
+
+```
+.
+├── configs
+│ └── app.conf
+├── logs
+│ └── system.log
+└── scripts
+ └── backup.sh
+Permissions Overview:
+-rw-r--r-- 1 user user 22 Oct 27 21:15 logs/system.log
+-r--r--r-- 1 user user 24 Oct 27 21:15 configs/app.conf
+-rwxr-xr-x 1 user user 48 Oct 27 21:15 scripts/backup.sh
+```
+
 ## License
 
 This project is licensed under the MIT License.
